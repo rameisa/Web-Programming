@@ -1,4 +1,4 @@
-# Web Application Development
+# Web Programming
 
 A collection of projects and practice work from my Web Application Development course, showing the fundamentals of building for the web.
 
