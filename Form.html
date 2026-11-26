@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <br>
+    <form action="/action.php" method="post">
+        <h5>Enter you Username:</h5>
+        <input type="text" placeholder="Enter name" name="name">
+        <br />
+        <br>
+        <h5>Enter your Password:</h5>
+        <input type="password" placeholder="Password" name="password">
+<br />
+<br>
+<h5>Select Class:</h5>
+        <label for="101">
+        <input type="radio" value="class 10" name="class" id="101">class 10
+        </label>
+        <br />
+        <label for="102">
+        <input type="radio" value="class 11" name="class" id="102">class 11
+        </label>
+        <br />
+        <br>
+
+        <h5>Subjects:</h5>
+        <div id="id101" class="class101">
+            <label for="1011">
+            <input type="checkbox" value="maths" name="subject" id="1011">maths
+            </label>
+
+            <br />
+
+            <label for="1012">
+            <input type="checkbox" value="science" name="subject" id="1012">science
+            </label>
+        </div>
+
+        <div id="id102" class="class102">
+            <label for="1021">
+            <input type="checkbox" value="maths" name="subject" id="1021">maths
+            </label>
+
+            <br />
+            
+            <label for="1022">
+            <input type="checkbox" value="science" name="subject" id="1022">science
+            </label>
+        </div>
+        <br>
+
+<h5>Choose your City:</h5>
+        <select name="City" id="City">
+            <option value="Karachi">Karachi</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Islamabad">Islamabad</option>
+        </select>
+
+        <br>
+        <h5>Give Your Feedback:</h5>
+        <textarea name="Feedback" id="Feedback" placeholder="Please give your feedback">
+        </textarea>
+
+        <br>
+        <iframe width="300" height="215" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=dZUF_FGB_exryjpV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+      <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
