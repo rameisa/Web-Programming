@@ -1,76 +1,146 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
 </head>
+
 <body>
-    <h2>Registration Form</h2>
-    <br>
+
+    <h1>Student Registration Form</h1>
+
     <form action="/action.php" method="post">
-        <h5>Enter you Username:</h5>
-        <input type="text" placeholder="Enter name" name="name">
-        <br />
-        <br>
-        <h5>Enter your Password:</h5>
-        <input type="password" placeholder="Password" name="password">
-<br />
-<br>
-<h5>Select Class:</h5>
-        <label for="101">
-        <input type="radio" value="class 10" name="class" id="101">class 10
-        </label>
-        <br />
-        <label for="102">
-        <input type="radio" value="class 11" name="class" id="102">class 11
-        </label>
-        <br />
-        <br>
 
-        <h5>Subjects:</h5>
-        <div id="id101" class="class101">
-            <label for="1011">
-            <input type="checkbox" value="maths" name="subject" id="1011">maths
-            </label>
+        <fieldset>
 
-            <br />
+            <legend><b>Personal Information</b></legend>
 
-            <label for="1012">
-            <input type="checkbox" value="science" name="subject" id="1012">science
-            </label>
-        </div>
+            <br>
 
-        <div id="id102" class="class102">
-            <label for="1021">
-            <input type="checkbox" value="maths" name="subject" id="1021">maths
-            </label>
+            <label for="name">Enter Your Username:</label>
+            <br>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
 
-            <br />
-            
-            <label for="1022">
-            <input type="checkbox" value="science" name="subject" id="1022">science
-            </label>
-        </div>
-        <br>
+            <br><br>
 
-<h5>Choose your City:</h5>
-        <select name="City" id="City">
-            <option value="Karachi">Karachi</option>
-            <option value="Lahore">Lahore</option>
-            <option value="Islamabad">Islamabad</option>
-        </select>
+            <label for="password">Enter Your Password:</label>
+            <br>
+            <input type="password" id="password" name="password"
+                   placeholder="Enter your password" required>
+
+        </fieldset>
 
         <br>
-        <h5>Give Your Feedback:</h5>
-        <textarea name="Feedback" id="Feedback" placeholder="Please give your feedback">
-        </textarea>
+
+        <fieldset>
+
+            <legend><b>Class Information</b></legend>
+
+            <br>
+
+            <label>Select Your Class:</label>
+            <br><br>
+
+            <input type="radio" value="class 10"
+                   name="class" id="class10" required>
+            <label for="class10">Class 10</label>
+
+            <br>
+
+            <input type="radio" value="class 11"
+                   name="class" id="class11">
+            <label for="class11">Class 11</label>
+
+            <br><br>
+
+            <label>Select Your Subjects:</label>
+            <br><br>
+
+            <input type="checkbox" value="maths"
+                   name="subject" id="maths">
+            <label for="maths">Maths</label>
+
+            <br>
+
+            <input type="checkbox" value="science"
+                   name="subject" id="science">
+            <label for="science">Science</label>
+
+            <br>
+
+            <input type="checkbox" value="english"
+                   name="subject" id="english">
+            <label for="english">English</label>
+
+        </fieldset>
 
         <br>
-        <iframe width="300" height="215" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=dZUF_FGB_exryjpV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-      <br>
-        <input type="submit" value="Submit">
+
+        <fieldset>
+
+            <legend><b>Additional Information</b></legend>
+
+            <br>
+
+            <label for="city">Choose Your City:</label>
+            <br><br>
+
+            <select name="city" id="city">
+
+                <option value="">-- Select City --</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Peshawar">Peshawar</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="feedback">Give Your Feedback:</label>
+            <br><br>
+
+            <textarea
+                name="feedback"
+                id="feedback"
+                rows="6"
+                cols="40"
+                placeholder="Please give your feedback">
+            </textarea>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend><b>Learning Video</b></legend>
+
+            <br>
+
+            <iframe
+                width="400"
+                height="250"
+                src="https://www.youtube.com/embed/HcOc7P5BMi4"
+                title="HTML Tutorial"
+                allowfullscreen>
+            </iframe>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit Registration">
+
+        <input type="reset" value="Reset">
+
     </form>
+
 </body>
+
 </html>
+```

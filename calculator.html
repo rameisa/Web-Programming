@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="icon" type="image/png" href="data:image/jpeg;base64,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">
+
+    <style>
+
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            background-image: url("https://media.istockphoto.com/id/809971888/photo/night-sky-landscape.jpg?s=612x612&w=0&k=20&c=ku3RWu4DQ8ErN-KbT1Act72LMocTwSAAm3UDkLiako0=");
+        }
+        
+
+        /* Large block behind calculator */
+        .calculator {
+            width: 305px;
+            margin: 22px auto;
+            padding: 15px;
+            background-color: #50719c;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 7px;
+        }
+
+        td {
+            text-align: center;
+            padding: 0;
+        }
+
+         h1 {
+    text-align: center;
+    color: rgb(76, 110, 205);
+    font-size: 40px;
+}
+
+        /* Display box detais*/
+        .display {
+            width: 100%;
+            height: 85px;
+            box-sizing: border-box;
+            border: none;
+            background-color: #f7f7f7;
+            font-size: 28px;
+            text-align: right;
+            padding: 10px;
+        }
+
+        /* Normal buttons details in my calculator */
+        input[type="submit"] {
+            width: 60px;
+            height: 58px;
+            border: none;
+            background-color: #f1f1f1;
+            font-size: 21px;
+            font-weight: bold;
+            color: #555555;
+            cursor: pointer;
+        }
+
+        /* Hover: make changes to button when we place mouse on it  */
+       input[type="submit"]:hover {
+            background-color: #b6b4b4;
+    
+}
+        /* Zero button details */
+        .zero {
+            width: 127px !important;
+        }
+
+        /* Plus button details */
+        .plus {
+            width: 60px !important;
+            height: 123px !important;
+            background-color: #f1f1f1 !important;
+            color: #555555 !important;
+        }
+
+        /* Delete button details*/
+        .delete {
+            width: 60px !important;
+            height: 58px !important;
+            background-color: #ed0754 !important;
+            color: white !important;
+        }
+
+        /* Equal button details*/
+        .equal {
+            width: 127px !important;
+            height: 58px !important;
+            background-color: #7acb7c !important;
+            color: white !important;
+        }
+
+        input[type="submit"] {
+    border-radius: 8px !important;
+} 
+
+.display,
+.zero,
+.plus,
+.delete,
+.equal {
+    border-radius: 8px !important;
+}
+    </style>
+</head>
+
+<body>
+<h1>My Calculator</h1>
+<div class="calculator">
+
+    <form>
+
+
+        <table>
+
+            <!-- DISPLAY -->
+            <tr>
+                <td colspan="4">
+                    <input type="text" class="display" name="display">
+                </td>
+            </tr>
+
+
+            <!-- √  (  )  % -->
+            <tr>
+                <td>
+                    <input type="submit" value="√">
+                </td>
+
+                <td>
+                    <input type="submit" value="(">
+                </td>
+
+                <td>
+                    <input type="submit" value=")">
+                </td>
+
+                <td>
+                    <input type="submit" value="%">
+                </td>
+            </tr>
+
+
+            <!-- 7  8  9  / -->
+            <tr>
+                <td>
+                    <input type="submit" value="7">
+                </td>
+
+                <td>
+                    <input type="submit" value="8">
+                </td>
+
+                <td>
+                    <input type="submit" value="9">
+                </td>
+
+                <td>
+                    <input type="submit" value="/">
+                </td>
+            </tr>
+
+
+            <!-- 4  5  6  × -->
+            <tr>
+                <td>
+                    <input type="submit" value="4">
+                </td>
+
+                <td>
+                    <input type="submit" value="5">
+                </td>
+
+                <td>
+                    <input type="submit" value="6">
+                </td>
+
+                <td>
+                    <input type="submit" value="×">
+                </td>
+            </tr>
+
+
+            <!-- 1  2  3  - -->
+            <tr>
+                <td>
+                    <input type="submit" value="1">
+                </td>
+
+                <td>
+                    <input type="submit" value="2">
+                </td>
+
+                <td>
+                    <input type="submit" value="3">
+                </td>
+
+                <td>
+                    <input type="submit" value="-">
+                </td>
+            </tr>
+
+
+            <!-- 0  .  + -->
+            <tr>
+
+                <td colspan="2">
+                    <input type="submit" value="0" class="zero">
+                </td>
+
+                <td>
+                    <input type="submit" value=".">
+                </td>
+
+                <!-- PLUS -->
+                <td rowspan="2">
+                    <input type="submit" value="+" class="plus">
+                </td>
+
+            </tr>
+
+
+            <!-- DEL  = -->
+            <tr>
+
+                <td>
+                    <input type="submit" value="Del" class="delete">
+                </td>
+
+                <td colspan="2">
+                    <input type="submit" value="=" class="equal">
+                </td>
+
+            </tr>
+
+        </table>
+
+    </form>
+
+</div>
+
+</body>
+</html>
